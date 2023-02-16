@@ -36,7 +36,7 @@ public class Account {
 
     }
     /**
-     * Whem retrieving an Account from the database, all fields will be needed. In that case, a constructor with all
+     * When retrieving an Account from the database, all fields will be needed. In that case, a constructor with all
      * fields is needed.
      * @param account_id
      * @param username

@@ -1,0 +1,30 @@
+package Service;
+
+import DAO.AccountDAO;
+import Model.Account;
+
+public class AccountService {
+    AccountDAO accountDAO;
+
+    //Creating New AccountService with a new AccountDAO
+    public AccountService(){
+    accountDAO = new AccountDAO();
+    }
+
+    public AccountService(AccountDAO accountDAO){
+        this.accountDAO = accountDAO;
+    }
+    public boolean authenticates(Account account){
+            if (username.equals(account.username)&& account.password.length()) {
+                return true;
+            }else{
+                return false; 
+            }
+    }
+    
+    //Persist Account to DB
+    public Account addAccount(Account account) {
+        return accountDAO.addAccount(account);
+
+    }
+}

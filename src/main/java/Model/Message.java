@@ -43,7 +43,7 @@ public class Message {
         this.time_posted_epoch = time_posted_epoch;
     }
     /**
-     * Whem retrieving a message from the database, all fields will be needed. In that case, a constructor with all
+     * When retrieving a message from the database, all fields will be needed. In that case, a constructor with all
      * fields is needed.
      * @param message_id
      * @param posted_by
