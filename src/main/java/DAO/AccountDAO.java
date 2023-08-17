@@ -77,7 +77,7 @@ public class AccountDAO{
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
                 Account account = new Account(
-                    rs.getInt("id"), 
+                    rs.getInt("account_id"), 
                     rs.getString("username"), 
                     rs.getString("password"));
                     accounts.add(account);

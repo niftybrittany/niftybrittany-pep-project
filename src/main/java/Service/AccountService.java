@@ -33,8 +33,11 @@ public class AccountService {
         return accountDAO.addAccount(account);
 
     }
-
+    
+    //Login to Account in Database
     public Account loginAccount(Account account){
         return accountDAO.loginAccount(account);
     }
+
 }
+
