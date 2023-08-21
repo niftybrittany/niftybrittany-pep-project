@@ -46,8 +46,6 @@ public class SocialMediaController {
         app.delete("/messages/{message_id}", this::deleteMessageByIdHandler);
         app.patch("/messages/{message_id}", this::patchMessageByIdHandler);
         app.get("/accounts/{account_id}/messages", this::getAllMessagesByAccountIdHandler);
-        
-        //app.start(8080);
 
         return app;
     }
@@ -170,16 +168,10 @@ public class SocialMediaController {
         int account_id = Integer.parseInt(ctx.pathParam("account_id"));
         List<Message> messages = messageService.getAllMessagesByAccountID(account_id);
 
-        if (!messages.isEmpty()) {
+        
             ObjectMapper mapper = new ObjectMapper();
             ctx.json(mapper.writeValueAsString(messages));
-        }else{
-           ctx.result("");
-           
-        
-        }
-        ctx.status(200);
-        
+            ctx.status(200);
     }
 
 }
