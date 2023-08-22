@@ -54,10 +54,10 @@ public class SocialMediaController {
      * This is an example handler for an example endpoint.
      * @param context The Javalin Context object manages information about both the HTTP request and response.
      */
-    //#1 Create New User
+
+    //#1 Create New User Account
     private void postNewUserHandler(Context ctx) throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
-        
         Account account = mapper.readValue(ctx.body(), Account.class);
         Account addedAccount = accountService.addAccount(account);
 
@@ -86,7 +86,7 @@ public class SocialMediaController {
             } 
     }
 
-    //#3 Create New Message
+    //#3 Create New Message Handler
     private void postNewMessageHandler(Context ctx) throws JsonProcessingException{
         
         ObjectMapper mapper = new ObjectMapper();
@@ -107,11 +107,10 @@ public class SocialMediaController {
     private void getAllMessagesHandler(Context ctx) throws JsonProcessingException{
         ObjectMapper mapper = new ObjectMapper();
         ctx.json(mapper.writeValueAsString(messageService.getAllMessages()));
-
         ctx.status(200);
     }
 
-    // #5 GET Message Given Message ID
+    // #5 GET Message Given Message ID Handler
     private void getMessageByIdHandler(Context ctx) throws JsonProcessingException{
         int message_id = Integer.parseInt(ctx.pathParam("message_id"));
         ObjectMapper mapper = new ObjectMapper();
@@ -127,7 +126,7 @@ public class SocialMediaController {
         ctx.status(200);
     }
     
-    // #6 Delete Message By Message Id
+    // #6 Delete Message By Message ID
     private void deleteMessageByIdHandler(Context ctx) throws JsonProcessingException{
         int message_id = Integer.parseInt(ctx.pathParam("message_id"));
         ObjectMapper mapper = new ObjectMapper();
@@ -143,26 +142,24 @@ public class SocialMediaController {
         ctx.status(200);
     }
     
-    // #7 Update Message By Message Id
+    // #7 Update Message By Message ID
     private void patchMessageByIdHandler(Context ctx) throws JsonProcessingException{
             int message_id = Integer.parseInt(ctx.pathParam("message_id"));
-        
+
             ObjectMapper mapper = new ObjectMapper();
-    
             Message message = mapper.readValue(ctx.body(), Message.class);
             Message updatedMessage = messageService.updateMessageByID(message_id, message);
     
             if (updatedMessage != null && !updatedMessage.getMessage_text().isEmpty()) {
+                
                 ctx.json(mapper.writeValueAsString(updatedMessage));
                 ctx.status(200);
             }else{
                 ctx.status(400);
             }
-            
-        
     }
 
-    // #8 Get All Messages By Account Id
+    // #8 Get All Messages By Account ID
     private void getAllMessagesByAccountIdHandler(Context ctx) throws JsonProcessingException{
 
         int account_id = Integer.parseInt(ctx.pathParam("account_id"));

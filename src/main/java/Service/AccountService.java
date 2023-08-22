@@ -17,8 +17,6 @@ public class AccountService {
         this.accountDAO = accountDAO;
     }
     
-        
-    
     public boolean authenticates(Account account){
         
         int minPasswordLength = 4;
@@ -34,6 +32,7 @@ public class AccountService {
 
     }
     
+
     //Login to Account in Database
     public Account loginAccount(Account account){
         return accountDAO.loginAccount(account);

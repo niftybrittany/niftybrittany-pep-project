@@ -11,6 +11,7 @@ public class MessageService {
     public MessageService(){
         messageDAO = new MessageDAO();
     }
+    
     public MessageService(MessageDAO messageDAO){
         this.messageDAO = messageDAO;
     }
@@ -39,6 +40,7 @@ public class MessageService {
     public Message deleteMessageByID(int message_id) {
         return messageDAO.deleteMessageByID(message_id);
     }
+
     public boolean isUserExists(int posted_by){
         return messageDAO.isUserExists(posted_by);
     }

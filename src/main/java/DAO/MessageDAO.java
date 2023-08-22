@@ -8,11 +8,14 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+
 import Model.Message;
 import Util.ConnectionUtil;
 
 public class MessageDAO {
-    // Create or Insert New Message
+    
+
+    // Create (Insert) New Message
     public Message createMessage(Message message) {
         Connection connection = ConnectionUtil.getConnection();
         try {
