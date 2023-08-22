@@ -8,7 +8,7 @@ public class AccountService {
     AccountDAO accountDAO;
    
 
-    //Creating New AccountService with a new AccountDAO
+    //Create New AccountService with a new AccountDAO
     public AccountService(){
     accountDAO = new AccountDAO();
     }
@@ -31,7 +31,6 @@ public class AccountService {
         return accountDAO.addAccount(account);
 
     }
-    
 
     //Login to Account in Database
     public Account loginAccount(Account account){

@@ -8,13 +8,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import Model.Message;
 import Util.ConnectionUtil;
 
 public class MessageDAO {
-    
-
     // Create (Insert) New Message
     public Message createMessage(Message message) {
         Connection connection = ConnectionUtil.getConnection();
@@ -33,7 +30,6 @@ public class MessageDAO {
             if(pkeyResultSet.next()){
                 int generated_message_id = (int) pkeyResultSet.getLong(1);
                 return new Message(generated_message_id, message.getPosted_by(), message.getMessage_text(), message.getTime_posted_epoch());
-            
                 
             }
         }catch(SQLException e){
@@ -142,7 +138,7 @@ public class MessageDAO {
                     existingText = message.getMessage_text();
                 }
 
-        // Creating an instance of the updated message
+        // Create an instance of the updated message
             Message updatedMessage = new Message(
                 message_id,
                 rs.getInt("posted_by"),

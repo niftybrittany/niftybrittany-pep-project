@@ -26,8 +26,8 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running AuthIntegrationTest
-[ERROR] Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 1.073 s <<< FAILURE! - in AuthIntegrationTest
-[ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest  Time elapsed: 0.982 s  <<< ERROR!
+[ERROR] Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.903 s <<< FAILURE! - in AuthIntegrationTest
+[ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest  Time elapsed: 0.798 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -100,7 +100,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] AuthIntegrationTest.postRegisterShortPasswordTest  Time elapsed: 0.01 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterShortPasswordTest  Time elapsed: 0.008 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -173,7 +173,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] AuthIntegrationTest.postLoginEmptyTest  Time elapsed: 0.011 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postLoginEmptyTest  Time elapsed: 0.014 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -246,7 +246,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] AuthIntegrationTest.postRegisterDuplicateUsernameTest  Time elapsed: 0.011 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterDuplicateUsernameTest  Time elapsed: 0.012 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -319,7 +319,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] AuthIntegrationTest.postRegisterTest  Time elapsed: 0.03 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterTest  Time elapsed: 0.012 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -392,7 +392,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] AuthIntegrationTest.postRegisterBlankUsernameTest  Time elapsed: 0.011 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterBlankUsernameTest  Time elapsed: 0.046 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -465,7 +465,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] AuthIntegrationTest.postRegisterThenPostLoginTest  Time elapsed: 0.01 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterThenPostLoginTest  Time elapsed: 0.006 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -539,8 +539,8 @@ Caused by: java.net.BindException: Address already in use
 	... 59 more
 
 [INFO] Running MessagingIntegrationTest
-[ERROR] Tests run: 20, Failures: 0, Errors: 20, Skipped: 0, Time elapsed: 0.208 s <<< FAILURE! - in MessagingIntegrationTest
-[ERROR] MessagingIntegrationTest.postAccountAndMessageThenGetMessageTest  Time elapsed: 0.001 s  <<< ERROR!
+[ERROR] Tests run: 20, Failures: 0, Errors: 20, Skipped: 0, Time elapsed: 0.424 s <<< FAILURE! - in MessagingIntegrationTest
+[ERROR] MessagingIntegrationTest.postAccountAndMessageThenGetMessageTest  Time elapsed: 0.002 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -759,7 +759,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] MessagingIntegrationTest.patchMessageTest  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageTest  Time elapsed: 0.002 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -905,7 +905,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesThenGetMessagesByAccountIdTest  Time elapsed: 0.007 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesThenGetMessagesByAccountIdTest  Time elapsed: 0.01 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -978,7 +978,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] MessagingIntegrationTest.deleteMessageTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.deleteMessageTest  Time elapsed: 0.008 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -1051,7 +1051,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] MessagingIntegrationTest.postMessageNonExistentAccountTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postMessageNonExistentAccountTest  Time elapsed: 0.008 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -1124,7 +1124,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] MessagingIntegrationTest.getMessageAfterPatchTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getMessageAfterPatchTest  Time elapsed: 0.009 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -1197,7 +1197,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] MessagingIntegrationTest.postAccountAndTooLongMessage  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndTooLongMessage  Time elapsed: 0.008 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -1270,7 +1270,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] MessagingIntegrationTest.patchMessageTooLongTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageTooLongTest  Time elapsed: 0.05 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -1343,7 +1343,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty  Time elapsed: 0.009 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -1416,7 +1416,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] MessagingIntegrationTest.deletedMessageShouldNotExistTest  Time elapsed: 0.04 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.deletedMessageShouldNotExistTest  Time elapsed: 0.024 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -1489,7 +1489,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] MessagingIntegrationTest.patchMessageBlankTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageBlankTest  Time elapsed: 0.009 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -1635,7 +1635,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesTest  Time elapsed: 0.007 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesTest  Time elapsed: 0.039 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -1708,7 +1708,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 59 more
 
-[ERROR] MessagingIntegrationTest.getAllMessagesEmptyTest  Time elapsed: 0.008 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getAllMessagesEmptyTest  Time elapsed: 0.013 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -1780,7 +1780,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 58 more
 
-[ERROR] MessagingIntegrationTest.postAccountAndMessageTest  Time elapsed: 0.015 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndMessageTest  Time elapsed: 0.083 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -1852,7 +1852,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 58 more
 
-[ERROR] MessagingIntegrationTest.postAccountTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountTest  Time elapsed: 0.008 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -1924,7 +1924,7 @@ Caused by: java.net.BindException: Address already in use
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
 	... 58 more
 
-[ERROR] MessagingIntegrationTest.postAccountAndMessageAndGetAllMessagesTest  Time elapsed: 0.039 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndMessageAndGetAllMessagesTest  Time elapsed: 0.05 s  <<< ERROR!
 io.javalin.util.JavalinBindException: Port already in use. Make sure no other process is using port 8080 and try again.
 	at io.javalin.Javalin.start(Javalin.java:182)
 	at io.javalin.Javalin.start(Javalin.java:148)
@@ -2033,8 +2033,8 @@ Caused by: java.net.BindException: Address already in use
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  5.418 s
-[INFO] Finished at: 2023-08-21T22:41:11Z
+[INFO] Total time:  5.710 s
+[INFO] Finished at: 2023-08-22T16:33:51Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M7:test (default-test) on project Challenges: 
 [ERROR] 
