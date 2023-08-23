@@ -1,7 +1,7 @@
-commit 89e1baae2433e06ef1f87dfdf6f3f09b6e1d612e
+commit ff4d9c22182f2fd653e3e35f9365e178f72ddc4e
 Author: Brittany Glaze <niftybrittany@gmail.com>
-Date:   Tue Aug 22 22:30:21 2023 +0000
+Date:   Tue Aug 22 22:33:59 2023 +0000
 
-    Commit Completed Project - All Tests Passing
+    Commit Social Media App Project
 
- 6 files changed, 57 insertions(+), 54 deletions(-)
+ 2 files changed, 14 insertions(+), 2017 deletions(-)

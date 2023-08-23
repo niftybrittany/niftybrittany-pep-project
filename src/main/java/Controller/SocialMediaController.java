@@ -47,8 +47,6 @@ public class SocialMediaController {
         app.delete("/messages/{message_id}", this::deleteMessageByIdHandler);
         app.patch("/messages/{message_id}", this::patchMessageByIdHandler);
         app.get("/accounts/{account_id}/messages", this::getAllMessagesByAccountIdHandler);
-        
-
 
         return app;
     }
@@ -60,12 +58,11 @@ public class SocialMediaController {
     //#1 Create New User
     private void postNewUserHandler(Context ctx) throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
-        
         Account account = mapper.readValue(ctx.body(), Account.class);
-        Account addedAccount = accountService.addAccount(account);
 
         if(accountService.authenticates(account) && !accounts.containsKey(account.getUsername())){
             accounts.put(account.getUsername(), account.getPassword());
+            Account addedAccount = accountService.addAccount(account);
             ctx.json(mapper.writeValueAsString(addedAccount));
             ctx.status(200);
         }else{
@@ -77,9 +74,10 @@ public class SocialMediaController {
     private void postLoginHandler(Context ctx) throws JsonProcessingException{
         ObjectMapper mapper = new ObjectMapper();
         Account account = mapper.readValue(ctx.body(), Account.class);
-        Account newLogin = accountService.loginAccount(account);
+        
             if(accounts.containsKey(account.getUsername())){
                 if(accounts.get(account.getUsername()).equals(account.getPassword())){
+                    Account newLogin = accountService.loginAccount(account);
                     ctx.json(mapper.writeValueAsString(newLogin));
                     ctx.status(200);
                 }else{ctx.status(401);
@@ -98,6 +96,7 @@ public class SocialMediaController {
         
         if(messageService.isUserExists(posted_by) && message.getMessage_text() != null && message.getMessage_text().length() < 255 
             && !message.getMessage_text().isEmpty()){
+
             Message addedMessage = messageService.addMessage(message);
             ctx.json(mapper.writeValueAsString(addedMessage));
             ctx.status(200);
@@ -149,9 +148,7 @@ public class SocialMediaController {
     // #7 Update Message By Message Id
     private void patchMessageByIdHandler(Context ctx) throws JsonProcessingException{
             int message_id = Integer.parseInt(ctx.pathParam("message_id"));
-        
             ObjectMapper mapper = new ObjectMapper();
-    
             Message message = mapper.readValue(ctx.body(), Message.class);
             Message updatedMessage = messageService.updateMessageByID(message_id, message);
     

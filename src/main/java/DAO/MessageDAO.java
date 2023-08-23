@@ -127,8 +127,8 @@ public class MessageDAO {
         Connection connection = ConnectionUtil.getConnection();
         try {
             
-            String fetchSql = "SELECT * FROM Message WHERE message_id=?";
-            PreparedStatement ps = connection.prepareStatement(fetchSql);
+            String selectSql = "SELECT * FROM Message WHERE message_id=?";
+            PreparedStatement ps = connection.prepareStatement(selectSql);
             ps.setInt(1, message_id);
         
             ResultSet rs = ps.executeQuery();
