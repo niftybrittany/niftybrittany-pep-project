@@ -128,10 +128,9 @@ public class MessageDAO {
         try {
             
             String selectSql = "SELECT * FROM Message WHERE message_id=?";
-            PreparedStatement ps = connection.prepareStatement(selectSql);
-            ps.setInt(1, message_id);
-        
-            ResultSet rs = ps.executeQuery();
+            PreparedStatement selectStatement = connection.prepareStatement(selectSql);
+            selectStatement.setInt(1, message_id);
+            ResultSet rs = selectStatement.executeQuery();
             if (rs.next()) {
                 String existingText = rs.getString("message_text");
                 if (message.getMessage_text() != null) {

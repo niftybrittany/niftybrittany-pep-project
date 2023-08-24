@@ -50,7 +50,6 @@ public class AccountDAO{
         
             ps.setString(1, account.getUsername());
             ps.setString(2, account.getPassword());
-            ps.executeQuery();
 
             ResultSet rs = ps.executeQuery();
 
@@ -59,10 +58,7 @@ public class AccountDAO{
                         rs.getString("password"));
                 return loginAccount;
             }
-    
-        }
-    
-        catch(SQLException e){
+        } catch(SQLException e){
             System.out.println(e.getMessage());
         }
         return null;
